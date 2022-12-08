@@ -446,8 +446,13 @@ nav .fa-solid {
   .contact-right {
     display: none;
   }
-  .logo{
+  .logo {
     width: 150px;
+  }
+  .contact-left .fa-phone-square-alt {
+    text-decoration: none;
+  }
+  .
 }
 
 #msg {
