@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Protfolio</title>
+    <!--srcipts for iocns -->
+    <script
+      src="https://kit.fontawesome.com/b0f288b766.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header content html code start-->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo3.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <!--li><a class="demo" href="#services">Services</a></!--li-->
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <a href="Amith_HA.pdf" download class="btn btn2">Download CV</a>
+            <i class="fa-solid fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm <span>Amith H A</span> <br /></h1>
+          <p>Web Developer</p>
+        </div>
+      </div>
+    </div>
+    <!-- Header content html code ends-->
+
+    <!-- About section html code start-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/dp.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am Amith H A, completed my MCA in 2021. Coming to my skills, i
+              have developed my final year project in PHP, so I'm quite good at
+              it and along with that I am good at HTML, CSS, JavaScript, and SQL
+              as well. I am fast learner and would love to learn new things and
+              implement them. I am also good at communication.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>HTML,CSS, Bootstrap </span><br />Desigining Web
+                  interface
+                </li>
+                <li><span>Wordpress Tools</span><br />Satic WebSite</li>
+                <li>
+                  <span>C, C++, Python, PHP, Java, JavaScript</span
+                  ><br />Programing Language
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Wordpress Websites</span><br />I have developed
+                  Wordpress Websites
+                  <a href="https://infoprop.co.in/">infoprop</a>
+                </li>
+                <li>
+                  <span>Wordpress Development</span><br />Desigining Web
+                  interface
+                </li>
+                <li><span>HTML CSS</span><br />Desigining Web interface</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Master of Computer Application</span><br />AMC
+                  Engineering College<br />
+                  2019-2021
+                </li>
+                <li>
+                  <span>Bachelor of Computer Application</span><br />Sadhguru
+                  Sainath Degree College<br />
+                  2015-2018
+                </li>
+                <!--li><span>HTML CSS</span><br />Desigining Web interface</!--li -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About section html code ends-->
+
+    <!--Services Section html code start-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Wordpress Developer</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Wordpress Developer</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Wordpress Developer</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Services Section html code ends-->
+
+    <!-------------portfolio Section html code start-------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/icredispace1.png" />
+            <div class="layer">
+              <h3>Wordpress WebSite</h3>
+              <p>This WebSite is completely developed in Wordpress.</p>
+              <a href="https://icreditspace.com/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/rock_paper.png" />
+            <div class="layer">
+              <h3>Rock Paper Scissor App</h3>
+              <p>
+                This is a Rock Paper Scissor game which is developed using HTML
+                CSS JavaScript.
+              </p>
+              <a href="https://amithcr7.github.io/Rock-Paper-Scissor/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/city skyline night.png" />
+            <div class="layer">
+              <h3>City Sky Line using CSS</h3>
+              <p>
+                This City Sky Line is completed developed using CSS, it shows
+                two types screen Day and Night.
+              </p>
+              <a href="https://amithcr7.github.io/city_skyline/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/amithcr7?tab=repositories" class="btn"
+          >See more</a
+        >
+      </div>
+    </div>
+    <!-------------portfolio Section html code ends-------->
+
+    <!----------contact module html code start--------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> amithp1529@gmail.com</p>
+            <p><i class="fa-solid fa-phone-square-alt"></i> +91-9113598510</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/in/amith-h-a-945a38174/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/amithcr7"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/cr7amith/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a href="Amith_HA.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Name" required />
+              <input type="email" name="Email" placeholder="Email" required />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Amith</p>
+      </div>
+    </div>
+    <!----------contact module html code ends--------->
+
+    <script>
+      /* java script for about section "skill, experience education Tabs*/
+      var tablinks = document.getElementsByClassName('tab-links')
+      var tabcontents = document.getElementsByClassName('tab-contents')
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove('active-link')
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove('active-tab')
+        }
+        event.currentTarget.classList.add('active-link')
+        document.getElementById(tabname).classList.add('active-tab')
+      }
+    </script>
+    <script>
+      /* JavaScript for Side menu for small screens*/
+
+      var sidemen = document.getElementById('sidemenu')
+
+      function openmenu() {
+        sidemen.style.right = '0'
+      }
+
+      function closemenu() {
+        sidemen.style.right = '-200px'
+      }
+    </script>
+
+    <script>
+      /* Sending data to Google Sheets after submission */
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbylxjCpmx4GamaA6HKVg6vO1eUHSEGK5VyAX5fhHbRhwWgVTr3NYFSAJat7YhzLnq9Z/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById('msg')
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = 'Message sent successfully'
+            setTimeout(function () {
+              msg.innerHTML = ''
+            }, 5000)
+            form.reset()
+          })
+          .catch((error) => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
